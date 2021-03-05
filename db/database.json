@@ -1,4 +1,23 @@
 {
   "_default": {},
-  "guild": {}
+  "guild": {
+    "1": {
+      "ttl": -1,
+      "name": "hi",
+      "id": 816707457786445856,
+      "prefix": ".",
+      "extensions": {
+        "enabled": [
+          {
+            "name": "Test",
+            "extension_config": {
+              "test_arg": true
+            },
+            "commands_config": []
+          }
+        ],
+        "disabled": []
+      }
+    }
+  }
 }

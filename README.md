@@ -14,8 +14,15 @@ This is how you will be able to run the bot:
 
 
 ```
-discord.py==1.6.0
-aiohttp==3.7.4 (Installed by discord.py)
+app prerequisites:
+
+- Python3
+
+python prerequisites
+
+discord.py>=1.6.0
+aiohttp>=3.7.4 (Installed by discord.py)
+tinydb>=3.12.1
 ```
 
 ### Installing
