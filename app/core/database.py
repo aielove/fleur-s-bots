@@ -29,7 +29,7 @@ class DatabaseCommands:
 
 
     @staticmethod
-    def command_get_guild_prefix(self):
+    def command_get_guild_ctx_raw(self):
         try:
             table = self.db_obj.table("guild")
             guild = Query()
@@ -108,9 +108,9 @@ class DatabaseManager:
         self._queue.put(command_obj)
         return command_obj
 
-    def get_guild_prefix(self, args):
+    def get_guild_ctx_raw(self, args):
         command_obj = DatabaseExecute().from_request(
-            command_arg=args, function_to_execute=DatabaseCommands.command_get_guild_prefix, db_obj=self.db
+            command_arg=args, function_to_execute=DatabaseCommands.command_get_guild_ctx_raw, db_obj=self.db
         )
         self._queue.put(command_obj)
         return command_obj
