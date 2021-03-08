@@ -1,5 +1,5 @@
 from .misc import Misc
 
 
-def setup(client, app_config):
-    return Misc(client, app_config)
+def setup(client):
+    return Misc(client)
